@@ -1,0 +1,65 @@
+:root {
+  --bg-header: url('./images/yellow_bg.jpg');
+  --main-color: #fab224;
+  --alien-icon: url('./images/cursor.png');
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Helvetica Neue",  sans-serif;
+  font-size: 16px;
+  color: var(--main-color);
+}
+
+.container {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.bg-image {
+  background-image: var(--bg-header);
+  background-size: cover;
+  background-color: var(--main-color);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 11em;
+  z-index: -1;
+}
+
+.char-image {
+  border-radius: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.char-image:hover {
+  cursor: var(--alien-icon), pointer;
+}
+
+.quote-text {
+  max-width: 70vw;
+}
+
+@media only screen and (max-width: 760px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  .quote-text {
+    font-size: 2rem;
+  }
+}
