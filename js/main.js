@@ -11,7 +11,7 @@ const displayQuote = () => {
   let authorHtml = '';
 
   quoteHtml += `"${quote.quote}"`;
-  //authorHtml += `— ${quote.author}`; - replacing to test XF quotes
+  
   authorHtml += `<strong>${quote.character}</strong> &nbsp; (${quote.episode} - Season ${quote.season})`;
 
 
